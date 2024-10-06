@@ -1,4 +1,4 @@
-// models/Biller.js
+
 const mongoose = require('mongoose');
 
 const billerSchema = new mongoose.Schema({
