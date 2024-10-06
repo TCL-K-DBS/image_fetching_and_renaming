@@ -2,6 +2,7 @@
 const express = require('express');
 const connectToMongoDB = require('./db');
 const bankRoutes = require('./routes/bank');
+const billerRoutes = require('./routes/billers');
 
 const app = express();
 
@@ -12,6 +13,8 @@ app.use(express.json());
 
 
 app.use('/api', bankRoutes);
+app.use('/api2', billerRoutes);
+
 
 
 const PORT = process.env.PORT || 3000;
